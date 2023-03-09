@@ -32,14 +32,14 @@ I like learning and have been interested in development for several years now. I
    if (input === null || input.every((el) => el === 0 || el === null)) {
    return [];
   } else {
-    const arr = [];
+    const array = [];
    const quantity = input.filter((el) => el > 0).length;
     const sum = input
      .filter((el) => el < 0)
     .reduce((total, current) => (total += current), 0);
-    arr.push(quantity);
-    arr.push(sum);
-    return arr;
+    array.push(quantity);
+    array.push(sum);
+    return array;
   }
  }
 ```
