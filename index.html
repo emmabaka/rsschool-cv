@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>CV</title>
   </head>
   <body>
@@ -11,7 +17,7 @@
       <div class="main-content">
         <!-- About user -->
         <div class="about-user">
-          <h3>Front-End Developer</h3>
+          <h2>Front-End Developer</h2>
           <h1>Emma Baka</h1>
           <p>
             I like learning and have been interested in development for several
@@ -23,80 +29,99 @@
         </div>
         <!-- Education -->
         <div class="education">
-          <h2>Education</h2>
+          <h3>Education</h3>
           <ul>
             <li>
-              <h3></h3>
-              <h4></h4>
-              <h4></h4>
-              <p></p>
+              <h3>GoIT</h3>
+              <h3>FullStack developer</h3>
+              <p>September 2022 - July 2023 | Ukraine</p>
             </li>
             <li>
-              <h3></h3>
-              <h4></h4>
-              <h4></h4>
-              <p></p>
+              <h3>RS School</h3>
+              <h3>JavaScript/Front-end</h3>
+              <p>March 2023 - August 2023 | Ukraine</p>
             </li>
             <li>
-              <h3></h3>
-              <h4></h4>
-              <h4></h4>
-              <p></p>
+              <h3>FreeCodeCamp</h3>
+              <h4>JavaScript</h4>
             </li>
           </ul>
         </div>
         <!-- Projects -->
         <div class="projects">
-            <h3>Projects</h3>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
+          <h3>Projects</h3>
+          <ul>
+            <li>
+              <a href="https://emmabaka.github.io/goit-markup-hw-08/"
+                >Adaptive two-page site</a
+              >...... HTML5, CSS3
+            </li>
+            <li>
+              <a href="https://emmabaka.github.io/goit-js-hw-11/"
+                >Picture search gallery</a
+              >...... JavaScript
+            </li>
+          </ul>
         </div>
         <!-- Code Example -->
         <div class="code-example">
-            <h3>Code Example</h3>
-            <div></div>
+          <h3>Code Example</h3>
+          <div>
+            <p>
+              function countPositivesSumNegatives(input = []) { if (input ===
+              null || input.every((el) => el === 0 || el === null)) { return [];
+              } else { const array = []; const quantity = input.filter((el) =>
+              el > 0).length; const sum = input .filter((el) => el < 0)
+              .reduce((total, current) => (total += current), 0);
+              array.push(quantity); array.push(sum); return array; } }
+            </p>
+          </div>
         </div>
       </div>
       <!-- Sidebar -->
       <div class="sidebar">
         <aside>
-            <!-- Img -->
-            <img src="" alt="user photo"></img>
-            <!-- Contacts -->
-            <div class="contacts">
-                <h3>Contacts</h3>
-                <p><a href=""></a></p>
-                <p><a href=""></a></p>
-            </div>
-            <!-- Tech Skills -->
-            <div>
-                <h3>Tech Skills</h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <!-- Soft Skills -->
-            <div>
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <!-- Languages -->
-            <div>
-                <h3>Languages</h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+          <!-- Img -->
+          <img src="" alt="user photo" />
+          <!-- Contacts -->
+          <div class="contacts">
+            <h3>Contacts</h3>
+            <p>
+              <span class="contact-type">C:</span
+              ><a href="">+38 096 372 72 19</a>
+            </p>
+            <p>
+              <span class="contact-type">E:</span
+              ><a href="">bakaemma88@gmail.com</a>
+            </p>
+          </div>
+          <!-- Tech Skills -->
+          <div>
+            <h3>Tech Skills</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3/SCSS</li>
+              <li>GIT, GITHUB</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <!-- Soft Skills -->
+          <div>
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Scrum</li>
+              <li>Agile</li>
+              <li>Teamwork</li>
+            </ul>
+          </div>
+          <!-- Languages -->
+          <div>
+            <h3>Languages</h3>
+            <ul>
+              <li>English (A2)</li>
+              <li>Ukrainian (Native)</li>
+            </ul>
+          </div>
         </aside>
       </div>
     </div>
