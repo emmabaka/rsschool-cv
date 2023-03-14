@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-content">
+        <!-- About user -->
+        <div class="user">
+          <h2 class="user__position">Front-End Developer</h2>
+          <h1 class="user__name">Emma Baka</h1>
+          <p class="user__desc">
+            I like learning and have been interested in development for several
+            years now. I study all my free time. Writing code is a special
+            pleasure, so I am open to new knowledge to get a job in one of the
+            world's IT companies and develop more and more in the direction of
+            development every day.
+          </p>
+        </div>
+        <!-- Education -->
+        <div class="education">
+          <h3 class="education__title">Education</h3>
+          <ul class="education__list">
+            <li class="education__item">
+              <h3 class="education__subtitle">GoIT</h3>
+              <h3 class="education__type">FullStack developer</h3>
+              <p class="education__period">
+                September 2022 - July 2023 | Ukraine
+              </p>
+            </li>
+            <li>
+              <h3 class="education__subtitle">RS School</h3>
+              <h3 class="education__type">JavaScript/Front-end</h3>
+              <p class="education__period">
+                March 2023 - August 2023 | Ukraine
+              </p>
+            </li>
+            <li>
+              <h3 class="education__subtitle">FreeCodeCamp</h3>
+              <h4 class="education__type">JavaScript</h4>
+              <p class="education__period">
+                February 2023 - May 2023 | Ukraine
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- Projects -->
+        <div class="projects">
+          <h3 class="projects__title">Projects</h3>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a
+                href="https://emmabaka.github.io/goit-markup-hw-08/"
+                class="projects__link"
+                >Adaptive two-page site</a
+              ><span class="projects__link--black">
+                ......[HTML5, CSS3].......</span
+              ><span class="projects__link--black"
+                ><a
+                  class="projects__link"
+                  href="https://github.com/emmabaka/goit-markup-hw-08"
+                  >[View code]</a
+                ></span
+              >
+            </li>
+            <li class="projects__item">
+              <a
+                href="https://emmabaka.github.io/goit-js-hw-11/"
+                class="projects__link"
+                >Picture search gallery</a
+              >
+              <span class="projects__link--black"
+                >..........[JavaScript].............</span
+              ><span class="projects__link--black"
+                ><a
+                  class="projects__link"
+                  href="https://github.com/emmabaka/goit-js-hw-11"
+                  >[View code]</a
+                ></span
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Code Example -->
+        <div class="code-example">
+          <h3 class="code-example__title">Code Example</h3>
+          <div class="code-example__wrap">
+            <code class="code-example__text">
+              function countPositivesSumNegatives(input = []) {<br />
+              if (input === null || input.every((el) => el === 0 || el ===
+              null)) {<br />
+              return []; <br />} else {<br />
+              const array = [];<br />
+              const quantity = input.filter((el) => el > 0).length;<br />
+              const sum = input.filter((el) => el < 0).reduce((total, current)
+              => (total += current), 0);<br />
+              array.push(quantity);<br />
+              array.push(sum); <br />return array; <br />}}
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <aside>
+          <!-- Img -->
+          <img
+            class="user-img"
+            src="./image/photo_2023-03-14_18-17-17.jpg"
+            alt="user photo"
+            width="370"
+            height="390"
+          />
+          <!-- Contacts -->
+          <div class="contacts">
+            <h3 class="contacts__title">Contacts</h3>
+            <p>
+              <span class="contacts__type">C:</span
+              ><a class="contacts__link" href="">+38 096 372 72 19</a>
+            </p>
+            <p>
+              <span class="contacts__type">E:</span
+              ><a class="contacts__link" href="">bakaemma88@gmail.com</a>
+            </p>
+          </div>
+          <!-- Tech Skills -->
+          <div class="skills">
+            <h3 class="skills__title">Tech Skills</h3>
+            <ul class="skills__list">
+              <li class="skills__item--accent">
+                <span class="skills__item">HTML5</span>
+              </li>
+              <li class="skills__item--accent">
+                <span class="skills__item">CSS3/SCSS</span>
+              </li>
+              <li class="skills__item--accent">
+                <span class="skills__item">GIT, GITHUB</span>
+              </li>
+              <li class="skills__item--accent">
+                <span class="skills__item">JavaScript</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Soft Skills -->
+          <div class="skills">
+            <h3 class="skills__title">Soft Skills</h3>
+            <ul class="skills__list">
+              <li class="skills__item--accent">
+                <span class="skills__item">Scrum</span>
+              </li>
+              <li class="skills__item--accent">
+                <span class="skills__item">Agile</span>
+              </li>
+              <li class="skills__item--accent">
+                <span class="skills__item">Teamwork</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Languages -->
+          <div class="skills">
+            <h3 class="skills__title">Languages</h3>
+            <ul class="skills__list">
+              <li class="skills__item--accent">
+                <span class="skills__item">English (A2)</span>
+              </li>
+              <li class="skills__item--accent">
+                <span class="skills__item">Ukrainian (Native)</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

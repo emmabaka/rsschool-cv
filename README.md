@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://emmabaka.github.io/rsschool-cv/
