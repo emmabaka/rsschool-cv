@@ -98,6 +98,9 @@ ul {
   background-color: #1e2939;
   color: var(--white--color);
 }
+.user-img {
+  margin-bottom: 50px;
+}
 .contacts,
 .skills {
   margin-left: 40px;
