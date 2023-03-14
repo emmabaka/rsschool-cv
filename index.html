@@ -16,10 +16,10 @@
     <div class="main-container">
       <div class="main-content">
         <!-- About user -->
-        <div class="about-user">
-          <h2>Front-End Developer</h2>
-          <h1>Emma Baka</h1>
-          <p>
+        <div class="user">
+          <h2 class="user__position">Front-End Developer</h2>
+          <h1 class="user__name">Emma Baka</h1>
+          <p class="user__desc">
             I like learning and have been interested in development for several
             years now. I study all my free time. Writing code is a special
             pleasure, so I am open to new knowledge to get a job in one of the
@@ -29,52 +29,65 @@
         </div>
         <!-- Education -->
         <div class="education">
-          <h3>Education</h3>
-          <ul>
-            <li>
-              <h3>GoIT</h3>
-              <h3>FullStack developer</h3>
-              <p>September 2022 - July 2023 | Ukraine</p>
+          <h3 class="education__title">Education</h3>
+          <ul class="education__list">
+            <li class="education__item">
+              <h3 class="education__subtitle">GoIT</h3>
+              <h3 class="education__type">FullStack developer</h3>
+              <p class="education__period">
+                September 2022 - July 2023 | Ukraine
+              </p>
             </li>
             <li>
-              <h3>RS School</h3>
-              <h3>JavaScript/Front-end</h3>
-              <p>March 2023 - August 2023 | Ukraine</p>
+              <h3 class="education__subtitle">RS School</h3>
+              <h3 class="education__type">JavaScript/Front-end</h3>
+              <p class="education__period">
+                March 2023 - August 2023 | Ukraine
+              </p>
             </li>
             <li>
-              <h3>FreeCodeCamp</h3>
-              <h4>JavaScript</h4>
+              <h3 class="education__subtitle">FreeCodeCamp</h3>
+              <h4 class="education__type">JavaScript</h4>
             </li>
           </ul>
         </div>
         <!-- Projects -->
         <div class="projects">
-          <h3>Projects</h3>
-          <ul>
-            <li>
-              <a href="https://emmabaka.github.io/goit-markup-hw-08/"
+          <h3 class="projects__title">Projects</h3>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a
+                href="https://emmabaka.github.io/goit-markup-hw-08/"
+                class="projects__link"
                 >Adaptive two-page site</a
-              >...... HTML5, CSS3
+              ><span class="projects__link--black"> ........HTML5, CSS3</span>
             </li>
-            <li>
-              <a href="https://emmabaka.github.io/goit-js-hw-11/"
+            <li class="projects__item">
+              <a
+                href="https://emmabaka.github.io/goit-js-hw-11/"
+                class="projects__link"
                 >Picture search gallery</a
-              >...... JavaScript
+              >
+              <span class="projects__link--black">.......... JavaScript</span>
             </li>
           </ul>
         </div>
         <!-- Code Example -->
         <div class="code-example">
-          <h3>Code Example</h3>
-          <div>
-            <p>
-              function countPositivesSumNegatives(input = []) { if (input ===
-              null || input.every((el) => el === 0 || el === null)) { return [];
-              } else { const array = []; const quantity = input.filter((el) =>
-              el > 0).length; const sum = input .filter((el) => el < 0)
-              .reduce((total, current) => (total += current), 0);
-              array.push(quantity); array.push(sum); return array; } }
-            </p>
+          <h3 class="code-example__title">Code Example</h3>
+          <div class="code-example__wrap">
+            <code class="code-example__text">
+              function countPositivesSumNegatives(input = []) {<br />
+              if (input === null || input.every((el) => el === 0 || el ===
+              null)) {<br />
+              return []; <br />} else {<br />
+              const array = [];<br />
+              const quantity = input.filter((el) => el > 0).length;<br />
+              const sum = input.filter((el) => el < 0).reduce((total, current)
+              => (total += current), 0);<br />
+              array.push(quantity);<br />
+              array.push(sum); <br />return array; <br />}}
+            </code>
           </div>
         </div>
       </div>
